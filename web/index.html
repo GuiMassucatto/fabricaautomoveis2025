@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Fabrica de Automoveis</title>
+    <title>Fábrica de Automóveis</title>
 </head>
 
 <body>
     <header>
         <h1></h1>
     </header>
+
     <main></main>
+
     <div id="modalVeiculos" class="modal oculto">
         <div class="janela">
-            <div class="cabecalho"><button onclick="modalVeiculos.classList.add('oculto')">X</button></div>
+            <div class="cabecalho">
+                <button onclick="modalVeiculos.classList.add('oculto')">X</button>
+            </div>
             <h2></h2>
             <div class="veiculos"></div>
         </div>
     </div>
+
+    <div id="modalVenda" class="modal oculto">
+        <div class="janela">
+            <div class="cabecalho">
+                <button onclick="fecharModalVenda()">X</button>
+            </div>
+            <h2 id="tituloVenda"></h2>
+
+            <div class="veiculos">
+                <label for="selectCliente">Cliente:</label>
+                <select id="selectCliente">
+                    <option value="">Selecione um cliente</option>
+                </select>
+
+                <label for="selectConcessionaria">Concessionária:</label>
+                <select id="selectConcessionaria">
+                    <option value="">Selecione uma concessionária</option>
+                </select>
+
+                <button id="btnConfirmarVenda" disabled>Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>

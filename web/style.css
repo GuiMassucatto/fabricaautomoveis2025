@@ -113,3 +113,20 @@ main div:hover {
     cursor: pointer;
     background-color: var(--c2);
 }
+
+#modalVenda select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+}
+
+#modalVenda label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#btnConfirmarVenda:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}

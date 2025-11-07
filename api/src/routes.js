@@ -7,17 +7,17 @@ const Cliente = require('./controllers/cliente');
 const Alocacao = require('./controllers/alocacao');
 const Venda = require('./controllers/venda');
 
-// Rota raiz
 router.get('/', (req, res) => {
-  res.json({titulo:'Fábrica de Automóveis 2025'});
+  res.json({ titulo: 'Fábrica de Automóveis 2025' });
 });
 
-// Rota para obter todos os automóveis
 router.get('/automoveis', Automovel.read);
 router.get('/concessionarias', Concessionaria.read);
 router.get('/clientes', Cliente.read);
 router.get('/alocacoes', Alocacao.read);
 router.get('/alocacoes/:area', Alocacao.readArea);
 router.get('/vendas', Venda.read);
+
+router.post('/vendas', Venda.create);
 
 module.exports = router;
