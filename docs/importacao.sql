@@ -1,4 +1,5 @@
 -- Importação de dados para a base de dados da fábrica de automóveis
+use fabrica2025;
 insert into automovel (id,modelo,preco) values
 (1,"Fiat Strada",43115.00),
 (2,"Fiat Argo",47660.00),

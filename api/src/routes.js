@@ -17,6 +17,7 @@ router.get('/automoveis', Automovel.read);
 router.get('/concessionarias', Concessionaria.read);
 router.get('/clientes', Cliente.read);
 router.get('/alocacoes', Alocacao.read);
+router.get('/alocacoes/:area', Alocacao.readArea);
 router.get('/vendas', Venda.read);
 
 module.exports = router;
